@@ -22,46 +22,41 @@
 
   </section>
   <section class="container content-container">
-    <!-- Remove and add content HTML -->
-    <div class="remove-assignment-content">
-      <h1>Content</h1>
+    <div class="wrapper">
+      <div>
+        <h4>Content with Image</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam magni, soluta laborum voluptates molestiae unde aliquid itaque fugiat iure, corporis.</p>
+        <button>Learn More</button>
+      </div>
+      <div>
+        <img src="assets/husky.jpg" alt="husky">
+      </div>
+  
     </div>
   </section>
   
   <section class="container accordion-container">
     <h2>Frequently Asked Questions</h2>
-    <button class="accordion">What is the oldest breed of dog?</button>
-    <div class="panel">
+    <details>
+      <summary>What is the oldest breed of dog?</summary>
+    <div>
       <p>Some sources say that the oldest breed of dog is the Akita Inu. They date back to 10,000 years.</p>
     </div>
-    
-    <button class="accordion">What is the best breed of dog for families?</button>
-    <div class="panel">
-      <p>Most people agree that labrador retrievers are the best breeds for a family dog.</p>
-    </div>
-    
-    <button class="accordion">What is my favourite dog in the world?</button>
-    <div class="panel">
-      <p>I'm glad you asked. My favourite dog in the world is a husky, mainly because that is the breed of dog I own. His name is Opie, and he is the cutest.</p>
-    </div>
+  </details>
+  <details>
+    <summary>What is the best breed of dog for families?</summary>
+  <div>
+    <p>Most people agree that labrador retrievers are the best breeds for a family dog.</p>
+  </div>
+</details>
+<details>
+  <summary>What is my favourite dog in the world?</summary>
+<div>
+  <p>I'm glad you asked. My favourite dog in the world is a husky, mainly because that is the breed of dog I own. His name is Opie, and he is the cutest.</p>
+</div>
+</details>
+</section>
 
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      </script>
-  </section>
   <section class="footer-container">
     <footer>
           <div class="f-container">
