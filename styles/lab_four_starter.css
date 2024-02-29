@@ -84,6 +84,15 @@ h4{
   transition: 0.4s;
 }
 
+.accordion::before{
+  content: ' + ';
+  font-size: 22px;
+  font-weight: bold;
+  right: 10px;
+  top: 2px;
+}
+
+
 .active, .accordion:hover {
   background-color: white;
   border: #403d58;
