@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="styles/global.css">
   <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <script src="styles/lab_four.js"></script>
+
   <title>Common Website Features</title>
 </head>
 <body>
@@ -29,15 +31,44 @@
   </section>
   <section class="container accordion-container">
     <!-- Remove and add accordion HTML -->
-    <div class="remove-assignment-content">
-      <h1>Accordion</h1>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Hello there how are you</p>
     </div>
+    
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
   </section>
   <section class="footer-container">
-    <!-- Remove and add footer HTML -->
-    <div class="remove-assignment-content">
-      <h1>Footer</h1>
-    </div>
+    <footer>
+      <h1>Author: Dana Collicutt</h1>
+      <p>Contact: <a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
   </section>
 </body>
 </html>
