@@ -16,8 +16,7 @@
     <div class="hero-image">
       <div class="hero-text">
         <h1>Welcome Dog Lovers</h1>
-        <p>Ready for Cuteness Overload?</p>
-
+        <h4>Ready for Cuteness Overload?</h4>
       </div>
     </div>
 
@@ -28,21 +27,22 @@
       <h1>Content</h1>
     </div>
   </section>
+  
   <section class="container accordion-container">
-    <!-- Remove and add accordion HTML -->
-    <button class="accordion">Section 1</button>
+    <h2>Frequently Asked Questions</h2>
+    <button class="accordion">What is the oldest breed of dog?</button>
     <div class="panel">
-      <p>Hello there how are you</p>
+      <p>Some sources say that the oldest breed of dog is the Akita Inu. They date back to 10,000 years.</p>
     </div>
     
-    <button class="accordion">Section 2</button>
+    <button class="accordion">What is the best breed of dog for families?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>Most people agree that labrador retrievers are the best breeds for a family dog.</p>
     </div>
     
-    <button class="accordion">Section 3</button>
+    <button class="accordion">What is my favourite dog in the world?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>I'm glad you asked. My favourite dog in the world is a husky, mainly because that is the breed of dog I own. His name is Opie, and he is the cutest.</p>
     </div>
 
     <script>
@@ -64,8 +64,17 @@
   </section>
   <section class="footer-container">
     <footer>
-      <h1>Author: Dana Collicutt</h1>
-      <p>Contact: <a href="mailto:hege@example.com">hege@example.com</a></p>
+          <div class="f-container">
+        <div>© Copyright <span id="currentYear"></span> Dana Collicutt.</div>
+
+<script>
+ var currentYear = new Date().getFullYear(); 
+document.getElementById("currentYear").innerHTML = currentYear; 
+</script>
+        
+<div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160600.6476950297!2d-114.25263876548763!3d51.02750740422717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1709213669680!5m2!1sen!2sca" width="100%" height="200%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
     </footer>
 
   </section>
